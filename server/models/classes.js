@@ -7,13 +7,13 @@ var Classes = new Schema({
     time: { type: String },
     location: { type: String },
     duration: { type: String },
-    students: [{ type: Schema.Types.ObjectId, ref: 'Students' }]
+    users: [{ type: Schema.Types.ObjectId, ref: 'users' }]
 });
 
 var ClassesModel = mongoose.model('classes', Classes);
 
 module.exports = ClassesModel;
 
-Classes.methods.findAllStudents = function(studentId) {
-    return ClassesModel.find({ students: studentId }).populate('students').exec();
+Classes.methods.findAllStudents = function(userId) {
+    return ClassesModel.find({ users: userId }).populate('users').exec();
 };

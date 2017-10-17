@@ -68,6 +68,7 @@ router.post('/attendance', function(req, res, next) {
     });
 });
 
+//checking posts
 router.get('/attendance', function(req, res) {
     User.findOne({ 'username': 'fatload' }).then(function(user) {
         res.send(user);
