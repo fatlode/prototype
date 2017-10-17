@@ -1,0 +1,13 @@
+<div ng-app="myApp" ng-controller="userController">
+    <h1>{{username}}</h1>
+    <div ng-controller="classController">
+        <ul>
+            <li>{{classes}}</li>
+        </ul>
+    </div>
+</div>
+
+
+<div ng-controller="logoutController">
+    <a ng-click='logout()' class="btn btn-default">Logout</a>
+</div>
