@@ -1,0 +1,34 @@
+.navbar-default {
+    background-color: #4BC6FA;
+    border-color: #E7E7E7;
+    color: white;
+    text-align: left;
+}
+.container{
+    width:100%;
+	margin:auto;
+	max-width:600px;
+	min-height:600px;
+	position:relative;
+}
+.btn btn-default{
+    padding-top: 20px;
+}
+.col1{
+    position: absolute;
+    top: 20px;
+	right: 70px;
+	z-index: 5;
+}
+.col{
+    text-align: center;
+}
+.back{
+    position: absolute;
+    left: 90px;
+    bottom: 80px;
+    font-size: 24px
+}
+.h2, .row{
+    text-align: center;
+}

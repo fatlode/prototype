@@ -1,0 +1,22 @@
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
+<nav class="navbar navbar-default" >
+  <h1>UTS: Attendance</h1>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+</nav>
+<ol class="breadcrumb">
+        <li class="breadcrumb-item"><a [routerLink]="['/subjects']">Subjects</a></li>
+          <li class="breadcrumb-item"><a [routerLink]="['/classes']">Classes</a></li>
+          <li class="breadcrumb-item"><a [routerLink]="['/classes']">Attend</a></li>
+          <li class="breadcrumb-item active">Attended</li>
+     </ol>
+<h2>You have successfully submitted your attendance.</h2>
+<div class="back">
+        <a href="http://localhost:3001/#/option">Back</a>
+</div>
+<div class="col1">
+        <div ng-controller="logoutController">
+          <a ng-click='logout()' class="btn btn-default">Logout</a>
+</div>

@@ -20,14 +20,30 @@ myApp.config(function($routeProvider) {
             controller: 'registerController',
             access: { restricted: false }
         })
-        .when('/one', {
-            template: '<h1>This is page one!</h1>',
-            access: { restricted: true }
-        })
-        .when('/two', {
-            template: '<h1>This is page two!</h1>',
-            access: { restricted: false }
-        })
+        .when('/subjects', {
+            templateUrl: 'partials/subjects.html',
+            access: {restricted: true}
+          })
+        .when('/classes', {
+            templateUrl: 'partials/classes.html',
+            access: {restricted: true}
+          })
+          .when('/attend', {
+            templateUrl: 'partials/attend.html',
+            access: {restricted: true}
+          })
+          .when('/attended', {
+            templateUrl: 'partials/attended.html',
+            access: {restricted: true}
+          })
+          .when('/option', {
+            templateUrl: 'partials/option.html',
+            access: {restricted: true}
+          })
+          .when('/check', {
+            templateUrl: 'partials/check.html',
+            access: {restricted: true}
+          })
         .otherwise({
             redirectTo: '/login'
         });

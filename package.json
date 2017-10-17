@@ -1,5 +1,5 @@
 {
-  "name": "mean-auth",
+  "name": "attendance-system",
   "scripts": {
     "start": "node server/server.js"
   },
