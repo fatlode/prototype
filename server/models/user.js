@@ -3,7 +3,7 @@ var mongoose = require('mongoose');
 var Attendance = require('./attendance');
 var Schema = mongoose.Schema;
 var passportLocalMongoose = require('passport-local-mongoose');
-UserModel.findUser = findUser;
+// UserModel.findUser = findUser;
 
 var User = new Schema({
     username: { type: String },
